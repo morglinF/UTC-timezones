@@ -36,10 +36,10 @@ jobs:
           build-mode: none
     steps:
     - name: Checkout repository
-      uses: actions/checkout@v4
+      uses: actions/checkout@v5
       with:
         ref: ${{ inputs.ref }}
-    - uses: actions/setup-python@v3
+    - uses: actions/setup-python@v6
 
     # Initializes the CodeQL tools for scanning.
     - name: Initialize CodeQL
